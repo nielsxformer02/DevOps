@@ -1,0 +1,10 @@
+<p-card header="Advanced Card" subheader="Welcome" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+    <p-header>
+        <img src="Card" [src]="imgUrl">
+        <select [(ngModel)]="imgUrl">
+            <option *ngFor="let op of options; let i = index;" value="{{options[i]}}">Image {{i+1}}</option>
+        </select>
+    </p-header>
+    <div>Welcome bij de cursus Web Frameworks! Dit is een Angular 6 Single Page Application, gestyled met PrimeNG</div>
+    
+</p-card>

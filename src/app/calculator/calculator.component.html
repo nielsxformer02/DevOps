@@ -1,0 +1,11 @@
+<header>
+    <input #in1 type="number" value=0/>
+    <button (click) = "setCounter(in1.value)">set counter</button>
+    <button (click) = "increment()" [textContent] = "counter"></button>
+    <select [(ngModel)]="counter">
+        <option value="1">Keuze A</option>
+        <option value="2">Keuze B</option>
+        <option value="3">Keuze C</option>
+    </select>
+</header>
+<div (mousemove)="DoSomething($event)">{{xpos}} / {{ypos}}</div>

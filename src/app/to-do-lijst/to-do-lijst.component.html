@@ -1,0 +1,21 @@
+<p-card header="To do lijst"  [style]="{width: '360px'}" styleClass="ui-card-shadow">
+        <p-header>
+            
+        </p-header>
+        
+
+        <div *ngIf="Lijst?.length <= 0">
+            <p>uw Lijst is momenteel leeg</p>
+        </div>
+        <div *ngIf="Lijst?.length > 0">
+            <ol *ngFor="let item of Lijst; let i = index;">
+                <li>{{Lijst[i]}}
+                <button (click)="verwijder(i)">X</button>
+            </li>
+            </ol>
+        </div>
+        <div>
+            <input #in2 type="text" />
+            <button (click)="addToDoList(in2.value)">Voeg toe</button>
+        </div>
+    </p-card>
