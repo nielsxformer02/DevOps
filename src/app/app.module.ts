@@ -6,6 +6,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ToDoLijstComponent } from './to-do-lijst/to-do-lijst.component';
 import {FormsModule} from '@angular/forms';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     WelcomeComponent,
     CalculatorComponent,
     ToDoLijstComponent,
+    TestComponent,
     
     
  
